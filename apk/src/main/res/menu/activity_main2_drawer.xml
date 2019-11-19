@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_broadcastMessages"
+            android:icon="@drawable/group_message"
+            android:title="@string/broadcast_message" />
+
+        <item
+            android:id="@+id/nav_broadcast"
+            android:icon="@drawable/broadcast"
+            android:title="@string/broadcast_call" />
+
+
+        <item
+            android:id="@+id/nav_calls"
+            android:icon="@drawable/select_contact"
+            android:title="@string/calls" />
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/notification"
+            android:title="@string/notifications__main2" />
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/loc_black"
+            android:title="@string/location" />
+    </group>
+
+    <item android:title="@string/user_profile">
+        <menu>
+
+            <item
+                android:id="@+id/nav_change_p"
+                android:icon="@drawable/change_password"
+                android:title="@string/change_password" />
+            <item
+                android:id="@+id/nav_delete_a"
+                android:icon="@drawable/delete_account"
+                android:title="@string/delete_account" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="@string/logout" />
+
+        </menu>
+    </item>
+
+</menu>

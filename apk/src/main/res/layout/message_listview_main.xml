@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/background_blue">
+
+    <ListView
+        android:id="@+id/messageList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@color/text_white"
+        android:dividerHeight="1.5dp"
+        android:longClickable="true">
+
+
+    </ListView>
+
+    <EditText
+        android:textColor="@color/text_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/inputTextC"
+        android:layout_toStartOf="@id/composeText" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/delete_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        app:backgroundTint="@color/darker_bars"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/composeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_toEndOf="@id/composeText"
+        android:clickable="true"
+        android:focusable="true"
+        app:backgroundTint="@color/darker_bars"
+        app:srcCompat="@android:drawable/ic_menu_send" />
+
+
+
+</RelativeLayout>
